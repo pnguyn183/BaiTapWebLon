@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANH MỤC SẢN PHẨM - Vật Tư Tiêu Hao</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="bg-gold py-3 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo -->
+            <div>
+                <a href="../html/index.html" class="navbar-brand">
+                    <img src="../img/logo.png" alt="Logo" style="height: 70px;">
+                </a>
+            </div>
+    
+            <!-- Form Tìm Kiếm -->
+            <div class="flex-grow-1 mx-3">
+                <form class="d-flex" action="#" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+            <button type="button" class="btn btn-outline-dark d-none" id="s/sp<i class="fa fas fas fa-sign-out-alt" > </i></button>
+               <div class="gr-button login-signup">
+                  <button class="btn btn-dark " id="dangnhap" data-bs-toggle="modal" data-bs-target="#sign-in">
+                   Đăng nhập <i class="fa fa-sign-in"> </i>
+                 </button>
+                 <div class="modal fade " id="sign-in" >
+                     <div class="modal-dialog">
+                        .<div class="modal-content bg-dark   ">
+                           <div class="modal-header">
+                              <h2 class="modal-title text-center w-100 fw-bold text-warning " >
+                                 Đăng Nhập
+                              </h2>
+                           </div>
+                           <form id="login">
+                              <div class="modal-body p-5 ">
+                                 <div class="input-group mb-4 ">
+                                    <div class="input-group-text "><i class="fa fas fa-user text-warning"></i></div>
+                                    <input type="text" class="form-control p-2 " id="nameLogin" placeholder="User name">
+                                 </div>
+                                 <div class="input-group mb-3 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-lock text-warning"></i></div>
+                                    <input type="password" class="form-control p-2" id="passwordLogin" placeholder="Password">
+                                 </div>
+                                 <p class="text-danger " id="error-signin"></p>
+                                 <div class="form-check mb-5 ">
+                                    <input class="form-check-input text-bg-dark " type="checkbox" value="" id="" />
+                                    <label class="form-check-label text-white " for=""> Remember password </label>
+                                 </div>
+
+                                 <button type="submit" class="btn btn-outline-warning w-100 " ><h5 class="fw-bold ">SIGN IN</h5></button>
+                              </div>
+                           </form>
+
+                           <p class="text-white text-center ">bạn chưa có tài khoản? <span class="link-warning"><u>Đăng ký</u></span></p>
+                        </div>
+                     </div>
+                 </div>
+                 
+                  <button class="btn btn-outline-dark" id="dangky" data-bs-toggle="modal" data-bs-target="#sign-up" >
+                      Đăng ký <i class="fa fa-user" > </i>
+                  </button>
+                  <div class="modal fade" id="sign-up" >
+                     <div class="modal-dialog">
+                        .<div class="modal-content bg-dark   ">
+                           <div class="modal-header">
+                              <h2 class="modal-title text-center w-100 fw-bold text-warning  ">
+                                 Đăng Ký
+                              </h2>
+                           </div>
+                           <div class="modal-body p-5  ">
+                              <form id="form-dangki">
+                                 <div class="input-group mb-4 ">
+                                    <div class="input-group-text "><i class="fa fas fa-user text-warning"></i></div>
+                                    <input type="text" class="form-control p-2" id="name" placeholder="User name" >
+                                 </div>
+                                 <div class="input-group mb-4 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-envelope text-warning"></i></div>
+                                    <input type="email" class="form-control p-2" id="email" placeholder="Email" >
+                                 </div>
+                                 <div class="input-group mb-4 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-phone text-warning"></i></div>
+                                    <input type="text" class="form-control p-2" id="phone" placeholder="Phone" >
+                                 </div>
+                                 <div class="input-group mb-4 ">
+                                    <div class="input-group-text  "><i class="fa fas fa-lock text-warning"></i></div>
+                                    <input type="password" class="form-control p-2" id="password" placeholder="Password" >
+                                 </div>
+
+                                 <div class="form-check mb-5 ">
+                                    <input class="form-check-input text-bg-dark " type="checkbox" value="" id="check-signup" />
+                                    <label class="form-check-label text-white " for="check-signup"> Đồng ý với <a class="link-warning" style="font-size: 18px;" href="http://">điều khoản & chính sách</a> của chúng tôi </label>
+                                    <p class="text-danger" id="error"></p>
+                                 </div>
+
+                                 <button type="submit" class="btn btn-outline-warning  w-100 " id="btn-dangky"><h5 class="fw-bold ">SIGN UP</h5></button>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                 </div>
+               </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-black fw-bold">
+    <div class="container">
+        <button class="navbar-toggler btn btn bg-gold" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>            
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> 
+                <li class="nav-item"><a class="nav-link" href="../html/index.html">TRANG CHỦ</a></li> <!-- Thêm nút Trang Chủ ở đây -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        DANH MỤC SẢN PHẨM
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../html/congcudungcu.html">Công Cụ - Dụng Cụ</a></li>
+                        <li><a class="dropdown-item" href="../html/maycamtay.html">Máy Cầm Tay</a></li>
+                        <li><a class="dropdown-item" href="../html/phukien.html">Phụ Kiện</a></li>
+                        <li><a class="dropdown-item" href="../html/vattutieuhao.html">Vật Tư Tiêu Hao</a></li>
+                        <li><a class="dropdown-item" href="../html/thietbidunghoi.html">Thiết Bị Dùng Hơi</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../html/khuyenmai.html">KHUYẾN MÃI</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/gioithieu.html">VỀ CHÚNG TÔI</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/lienhe.html">LIÊN HỆ</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/cart.html"><i class="bi bi-cart"></i> Giỏ Hàng</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    
+    
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="../html/index.html">Trang Chủ</a> &gt; <a href="#">Vật Tư Tiêu Hao</a>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="banner">
+            <img src="../img/banner4.png" class="img-fluid" alt="Banner Vật Tư Tiêu Hao">
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2 class="section-title">Vật Tư Tiêu Hao</h2>
+        <div class="row">
+            <div class="col-md-3 product">
+                <img src="../img/products/sp1.jpg" alt="Vật Tư 1" class="img-fluid">
+                <div class="product-title">Vật Tư 1</div>
+                <div class="product-price">50,000 VNĐ</div>
+            </div>
+            <div class="col-md-3 product">
+                <img src="../img/products/sp2.jpg" alt="Vật Tư 2" class="img-fluid">
+                <div class="product-title">Vật Tư 2</div>
+                <div class="product-price">75,000 VNĐ</div>
+            </div>
+            <div class="col-md-3 product">
+                <img src="../img/products/sp3.jpg" alt="Vật Tư 3" class="img-fluid">
+                <div class="product-title">Vật Tư 3</div>
+                <div class="product-price">100,000 VNĐ</div>
+            </div>
+            <div class="col-md-3 product">
+                <img src="../img/products/sp4.jpg" alt="Vật Tư 4" class="img-fluid">
+                <div class="product-title">Vật Tư 4</div>
+                <div class="product-price">120,000 VNĐ</div>
+            </div>
+            <div class="col-md-3 product">
+                <img src="../img/products/sp5.jpg" alt="Vật Tư 5" class="img-fluid">
+                <div class="product-title">Vật Tư 5</div>
+                <div class="product-price">140,000 VNĐ</div>
+            </div>
+            <div class="col-md-3 product">
+                <img src="../img/products/sp6.jpg" alt="Vật Tư 6" class="img-fluid">
+                <div class="product-title">Vật Tư 6</div>
+                <div class="product-price">160,000 VNĐ</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-note">
+        <p class="text-center mb-0">NGUYEN'S HOMETOOLS - YOUR TOOLS WORLD<sup>&trade;</sup></p>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nguyen's HomeTools. Tất cả bản quyền được bảo lưu.</p>
+            <p><a href="#" style="color: #ffffff;">Chính Sách Bảo Mật</a> | <a href="#" style="color: #ffffff;">Điều Khoản Sử Dụng</a></p>
+        </div>
+    </footer>
+        // Hàm kiểm tra trạng thái đăng nhập
+        function checkLoginStatus() {
+            let isLoggedIn = localStorage.getItem("isLoggedIn");
+    
+            const logoutButton = document.getElementById("logout");
+            const loginButton = document.getElementById("dangnhap");
+            const signupButton = document.getElementById("dangky");
+    
+            if (isLoggedIn === "true") {
+                logoutButton.classList.remove("d-none");
+                loginButton.classList.add("d-none");
+                signupButton.classList.add("d-none");
+            } else {
+                logoutButton.classList.add("d-none");
+                loginButton.classList.remove("d-none");
+                signupButton.classList.remove("d-none");
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            checkLoginStatus(); // Kiểm tra trạng thái đăng nhập khi trang được tải
+    
+            // Sự kiện đăng nhập
+            document.getElementById("login").addEventListener("submit", function(event) {
+                event.preventDefault();
+                localStorage.setItem("isLoggedIn", "true");
+                location.reload();
+            });
+    
+            // Sự kiện đăng xuất
+            document.getElementById("logout").addEventListener("click", function() {
+                localStorage.removeItem("isLoggedIn");
+                location.reload();
+            });
+        });
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/validate.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

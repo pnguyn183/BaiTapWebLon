@@ -1,0 +1,154 @@
+.bg-gold {
+    background-color: #ffde59; /* Màu vàng */
+    margin-bottom: 0px;
+}
+.bg-black {
+    background-color: #000000; /* Màu đen */
+}
+.navbar-brand {
+    color: rgb(0, 0, 0); /* Màu chữ cho logo */
+}
+.form-control {
+    width: 100%; /* Đặt chiều rộng của form tìm kiếm */
+}
+
+.nav-link {
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: rgb(0, 0, 0); /* Màu cam khi hover */
+    color: white; 
+}
+
+btn btn-link text-black :hover{
+    color: #ff0000;
+}
+
+.navbar-toggler.btn.bg-gold:hover {
+    background-color: #ffde59; /* Thay đổi màu theo ý bạn */
+    border-color: white; /* Thay đổi màu viền nếu cần */
+}
+
+.navbar .dropdown-toggle {
+    color: white;
+}
+.navbar-nav .nav-link {
+color: white;
+padding: 10px;
+margin-right: 50px;
+}
+.navbar-nav .nav-link:hover,.navbar-nav .nav-link:focus {
+    color: #ffde59;
+}
+.navbar .dropdown-menu {
+    background-color: #000000;
+    padding: 0;
+}
+.dropdown-item {
+    padding: 10px 20px;
+    color: #ffffff;
+}
+.dropdown-item:hover {
+    background-color: #ffde59;
+}
+.section-title {
+    margin: 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+    border-bottom: 2px solid #ffde59;
+    padding-bottom: 5px;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+.product-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.product-price {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.footer-note {
+    background-color: #ffde59;
+    padding: 20px 0; /* Khoảng cách trên và dưới */
+    color: #000000; /* Màu chữ */
+    font-weight: bold; /* Chữ đậm */
+    font-size: larger;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carousel-item img {
+    max-height: 400px; /* Đặt chiều cao tối đa cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+}
+
+.banner {
+    overflow: hidden; /* Đảm bảo không có tràn */
+    width: 100%; /* Chiếm 100% chiều rộng */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    text-align: center; /* Căn giữa nội dung nếu cần */
+}
+
+.banner img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    max-height: 300px; /* Thay đổi chiều cao tối đa theo nhu cầu */
+    object-fit: cover; /* Cắt ảnh nếu cần để giữ tỷ lệ */
+}
+.breadcrumbs {
+    background-color: #f8f9fa; /* Màu nền cho breadcrumbs */
+    padding: 10px 0; /* Khoảng cách trên và dưới */
+}
+
+.breadcrumbs a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #000000; /* Màu liên kết */
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+.breadcrumbs .container {
+    max-width: 1200px; /* Chiều rộng tối đa cho container */
+    margin: auto; /* Căn giữa container */
+}
+.product a {
+    text-decoration: none; /* Bỏ gạch dưới cho liên kết */
+    color: inherit; /* Giữ màu sắc của văn bản như màu mặc định */
+}
+
+.product {
+    overflow: hidden; /* Đảm bảo hình ảnh không tràn ra ngoài ô sản phẩm */
+}
+
+.product-image {
+    transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển tiếp cho hình ảnh */
+}
+
+.product:hover .product-image {
+    transform: scale(1.1); /* Zoom hình ảnh lên 10% khi hover */
+}
+

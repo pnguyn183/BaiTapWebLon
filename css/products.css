@@ -1,0 +1,20 @@
+
+/* Thay đổi chiều rộng và chiều cao của card */
+.card {
+    width: 65%; /* Chiều rộng nhỏ hơn */
+    max-height: 800px; /* Giới hạn chiều cao tối đa */
+    object-fit: cover; /* Đảm bảo hình ảnh được cắt xén phù hợp */
+    margin: 20px auto; /* Căn giữa card */
+}
+/* Giảm khoảng cách giữa các phần tử */
+.col-md-6 {
+    margin-left: 0; /* Không có khoảng cách bên trái */
+}
+.add-cart {
+    height: 50px;
+    width: 150px;
+    margin-right: 110px;
+}
+.price {
+    font-size: 1.5rem; /* Tăng kích thước chữ */
+}
